@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "Chrome Extension Example",
+  "description": "Example Chrome extension",
+  "version": "1.0.0",
+  "content_scripts": [
+    {
+      "matches": "*://*/*",
+      "js": "main.js"
+    }
+  ],
+  "browser_actions": {
+    "default_icon": "icon.png",
+    "default_title": "Example Chrome Extension"
+  },
+  "background": {
+    "page": "background.html"
+  },
+  "permissions": [
+    "background",
+    "activeTab"
+  ]
+}
